@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>disable submit button</title>
+    <script src="../jquery-3.6.1.js"></script>
+</head>
+<body>
+    <input id="enabled" name="enabled" type="checkbox" value="y" />
+       Click to continue<br>
+  
+    <input id="submit-button" disabled="disabled" name="Submit" type="submit" value="Accept" onclick="myFunction()" class="btn">
+          
+    <script>
+        $('#enabled').click(function () {
+            if ($('#submit-button').is(':disabled')) {
+                $('#submit-button').removeAttr('disabled');
+            } else {
+                $('#submit-button').attr('disabled', 'disabled');
+            }
+        });
+    </script>
+    <script>
+        function myFunction() {
+          alert("Booking Done");
+        }
+        </script>
+</body>
+</html>
