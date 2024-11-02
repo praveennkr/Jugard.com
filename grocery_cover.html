@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- adding fontawsome icon -->
+  <script src="https://kit.fontawesome.com/2e91f1125d.js" crossorigin="anonymous"></script>
+  <!--adding google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <title>Grocery Store</title>
+
+  <!--adding css page-->
+  <link rel="stylesheet" href="project_main.css" />
+  <!-- adding javascript page -->
+  <script src="jquery-3.6.1.js"></script>
+  <script src="project_main.js"></script>
+
+  <!--setting web icon-->
+  <link rel="shortcut icon" href="webiconidea.png" />
+
+  <!-- Custom styles for this template -->
+  <link href="fruit_style.css" rel="stylesheet" />
+
+  <style>
+    .dropbtn {
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body onload="display_ct();">
+  <div id="ct" style="
+        border: 1px solid #0c699e;
+        float: left;
+        margin-left: 50px;
+        padding: 1%;
+        font-size: large;
+      "></div>
+
+  <div class="response">
+    <div class="topnav">
+      <a href=""><i class="fa-solid fa-user" style="font-size: 20px"></i></a>
+      <a href="">News</a>
+      <a href="">Contact</a>
+      <a href="">About</a>
+      <a class="active" href="project_main.html">Home</a>
+    </div>
+
+    <div class="text-typing">
+      <pre class="jug">Jugard</pre>
+    </div>
+
+    <pre class="com">  .com
+        <hr style="width:45%; margin-left: 50px; margin-top: -250px;">
+      </pre>
+
+    <div style="margin-top: -50%">
+      <section class="shop_section layout_padding">
+        <div class="container">
+          <div class="box">
+            <div class="detail-box">
+              <h2>GROCERY STORE</h2>
+              <p style="margin-top: -5%;">
+                There are many variations of passages of Lorem Ipsum available
+              </p>
+            </div>
+
+          </div>
+      </section>
+
+
+
+      <section class="about_section">
+        <div class="row">
+          <img src="grocery_images/grocery (1).jpg" height="538px" width="800px" alt="" />
+          &nbsp;&nbsp;
+          <img src="grocery_images/grocery (4).jpg" height="538px" width="420px" alt="" />
+
+          <div class="detail-box">
+            <h2>About Our Grocery Store</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour
+            </p>
+            <a href="site/readmore.html"> Read More </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="fruit_section layout_padding">
+        <div class="container" style="margin-top: -4%;">
+          <div class="heading_container">
+            <hr />
+            <h2>Featured Items</h2>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="fruit_container">
+            <div class="box">
+              <img src="grocery_images/Annotation 2022-11-12 222149 (2).png" alt="" />
+              <div class="link_box">
+                <h3>Pulses</h3>
+                <a href=""> Buy Now </a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="grocery_images/brian-suman-vdbq-iiyvGY-unsplash (2).jpg" alt="" />
+              <div class="link_box">
+                <h3>Dairy</h3>
+                <a href=""> Buy Now </a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="grocery_images/istockphoto-167285800-1024x1024.jpg" alt="" />
+              <div class="link_box">
+                <h3>Bread</h3>
+                <a href=""> Buy Now </a>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="more row about-section" style="align-items: center;">
+            <a href="">
+              More <i class="fa-sharp fa-solid fa-circle-chevron-down"></i></a>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <div class="image_show">
+        <div class="s-wrap">
+          <div class="s-move">
+            <div class="slide">
+              <p class="image">
+                <img src="grocery_images/YXNP7681-1200X300-31102022.jpg" style="width: 1200px; height: 300px;">
+              </p>
+            </div>
+            <div class="slide">
+              <p class="image">
+                <img src="grocery_images/YXNP7696-1200X300-31102022.jpg" style="width: 1200px; height: 300px;">
+              </p>
+            </div>
+            <div class="slide">
+              <p class="image">
+                <img src="grocery_images/YXNP8003-1200X300-03112022.jpg" style="width: 1200px; height: 300px;">
+              </p>
+            </div>
+            <div class="slide">
+              <p class="image">
+                <img src="grocery_images/YXTT5896-1200x300-07112022.jpg" width: 1200px; height: 300px;">
+              </p>
+            </div>
+            <div class="slide">
+              <p class="image">
+                <img src="grocery_images/YXNP7681-1200X300-31102022.jpg" width: 1200px; height: 300px;">
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <div style="border: 0px solid black;">
+
+          <div class="dropdown" style="float: left; margin-left: 2%;">
+            <button class="dropbtn">Bakery and Bread</button>
+            <hr>
+            <div class="dropdown-content">
+              <a href="#">Whole wheat bread</a>
+              <a href="#">Pita pockets</a>
+              <a href="#">Whole-grain flour tortillas</a>
+            </div>
+          </div>
+
+          <section class="fruit_section layout_padding">
+            <div class="container" style="margin-top: -4%;">
+              <div class="heading_container">
+
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="fruit_container">
+                <div class="box">
+                  <img src="grocery_images/bake1.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Biscuit</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="grocery_images/bake2.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Cookies</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="grocery_images/bake3.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Paties</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <button class="more row about-section"
+                style="font-size: larger; background-color: black; color: white; width: 250px; margin-left: 2%;">
+                MORE &nbsp; <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>
+              </button>
+            </div>
+          </section>
+
+
+
+
+
+          <div class="dropdown" style="float: left; margin-left: 2%;">
+            <button class="dropbtn">Soups and Canned Goods</button>
+            <hr>
+            <div class="dropdown-content">
+              <a href="#">Diced or whole peeled tomatoes</a>
+              <a href="#">Tuna or salmon packed in water</a>
+              <a href="#">Low-sodium soups and broths</a>
+            </div>
+          </div>
+
+          <section class="fruit_section layout_padding">
+            <div class="container" style="margin-top: -4%;">
+              <div class="heading_container">
+
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="fruit_container">
+                <div class="box">
+                  <img src="grocery_images/bake4.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Peeled tomatoes</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="grocery_images/bake5.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Chilies</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="grocery_images/bake.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Garbanzo Beans</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <button class="more row about-section"
+                style="font-size: larger; background-color: black; color: white; width: 250px; margin-left: 2%;">
+                MORE &nbsp; <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>
+              </button>
+            </div>
+          </section>
+
+
+
+
+          <div class="dropdown" style="float: left; margin-left: 2%;">
+            <button class="dropbtn">Frozen Foods</button>
+            <hr>
+            <div class="dropdown-content">
+              <a href="#">Frozen shrimp</a>
+              <a href="#">Whole-grain waffles</a>
+              <a href="#">Whole-grain vegetable pizza</a>
+            </div>
+          </div>
+          <section class="fruit_section layout_padding">
+            <div class="container" style="margin-top: -4%;">
+              <div class="heading_container">
+
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="fruit_container">
+                <div class="box">
+                  <img src="grocery_images/food1.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Cheddar</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="grocery_images/food2.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Prawn</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="grocery_images/food3.jpg" alt="" />
+                  <div class="link_box">
+                    <h3>Keventer</h3>
+                    <a href=""> Buy Now </a>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+          </section>
+        </div>
+
+
+        <button onclick="myFunction()" class="more row about-section"
+          style="font-size: larger; background-color: black; color: white; width: 250px; margin-left: 2%; margin-top: -100px;">
+          LOAD MORE &nbsp; <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <br>
+        <br>
+
+        <table border="1px solid black" cellspacing="100" id="myDIV" style="display: none;">
+          <tbody>
+            <tr >
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+
+
+            </tr>
+            <tr>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+
+
+            </tr>
+            <tr>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+              <td><img src="webiconidea.png" height="150px" width="150px"></td>
+
+
+            </tr>
+
+          </tbody>
+        </table>
+
+
+
+        <hr>
+        <span style="font-family: 'Segoe UI'; font-weight: bolder">
+          © 2022 All Rights Reserved. PRAVEEN KUMAR
+        </span>
+      </div>
+    </div>
+
+
+
+
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+</body>
+
+</html>

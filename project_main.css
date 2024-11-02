@@ -1,0 +1,321 @@
+body {
+  /*background image*/
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: aliceblue;
+
+  /*hiding scrollbar */
+  overflow-x: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  margin-right: 10px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(123, 206, 231);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #0c699e;
+  color: white;
+}
+
+a.active:hover {
+  background-color: #09d7f3;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+/*jugard font stylining*/
+.jug {
+  margin: 20px;
+  margin-left: 60px;
+  font-size: 150px;
+  font-family: "Trebuchet MS";
+  font-weight: bolder;
+  letter-spacing: 10px;
+  line-height: 180px;
+  margin-top: 40px;
+}
+
+/*.com stylining*/
+.com {
+  margin-top: -90px;
+  font-size: 140px;
+  font-family: "Sacramento", cursive;
+  font-weight: bolder;
+}
+
+/*animation of jugard*/
+.text-typing {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 12s forwards, 1s;
+}
+
+/*on hover animation*/
+/*.text-typing:hover {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s  forwards;
+}
+  /* animation: typing 8s forwards, 5s none; */
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/*responsiveness*/
+@media screen and ((max-width: 800px) and (min-width: 500px)) {
+}
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+  /* For tablets and mobile*/
+  .response {
+    font-family: "Courier New", Courier, monospace;
+    font-size: x-large;
+  }
+}
+
+/* other site linking details card hover */
+.card {
+  width: 600px;
+  height: 450px;
+  background: #000;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backface-visibility: hidden;
+}
+
+.card:hover {
+  transform: scale(0.9);
+}
+.card:hover:after {
+  height: 280px;
+}
+.card:hover .con-text p {
+  margin-bottom: 0px;
+  opacity: 1;
+}
+.card:hover img {
+  transform: scale(1.25);
+}
+.card:hover .ul {
+  transform: translate(0);
+  opacity: 1;
+}
+.card:after {
+  width: 100%;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 20;
+  transition: all 0.25s ease;
+}
+.card img {
+  height: 100%;
+  z-index: 10;
+  transition: all 0.25s ease;
+}
+.card .con-text {
+  z-index: 30;
+  position: absolute;
+  bottom: -2px;
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 15px;
+}
+.card .con-text p {
+  opacity: 0;
+  margin-bottom: -170px;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.card .con-text button {
+  padding: 7px 17px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: poppins;
+  outline: none;
+}
+.card .can-text p button:hover {
+  background: #fff;
+  color: #000;
+}
+.ul {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 40;
+  border-radius: 14px;
+  padding-left: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  top: 0px;
+  opacity: 0;
+  transform: translate(100%);
+  transition: all 0.25s ease;
+}
+.ul li {
+  background: #fff;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: all 0.25s ease;
+  backface-visibility: hidden;
+}
+.ul li:last-child {
+  border-radius: 0px 0px 12px 12px;
+}
+.ul li:first-child {
+  border-radius: 12px 12px 0px 0px;
+}
+.ul li:hover {
+  opacity: 1;
+  transform: translate(-7px, -4px);
+  border-radius: 6px;
+}
+.ul li i {
+  /* font-size: 1.4rem; */
+  color: #000;
+}
+
+/* footer Styles */
+.extra {
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 8px;
+  float: right;
+  margin-right: 25px;
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 18px;
+}
+
+#id1 {
+  font-family: Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  font-weight: 500;
+  font-stretch: ultra-expanded;
+}
+
+.tdata {
+  text-decoration: none;
+  width: max-content;
+}
+
+.tdata:hover {
+  font-weight: bolder;
+  width: fit-content;
+}
+
+/* google fonts
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive;
+
+*/
+
+
+
+ /*trasition details*/
+ .image_show
+ {
+     text-align: center;
+     grid-row-start: 1;
+     grid-row-end: 2;
+     grid-column-start: 1;
+     grid-column-end: 4;    
+ }
+ .image
+ {
+     padding: 0px 20px ;
+ }
+      .s-wrap {
+             width: 100%;
+             overflow: hidden; /* Hide scrollbars */
+         }
+ 
+         .s-move {
+             display: flex;
+             position: relative;
+             top: 0;
+             right: 0;
+         }
+         
+         .slide {
+             box-sizing: border-box;
+             padding: 10px;
+             width: 100%;
+             flex-shrink: 0; 
+         }
+         
+         @keyframes slideh {           
+             0% { right: 0; }
+             15% { right: 0; }
+             20% { right: 100%; }
+             35% { right: 100%; }
+             40% { right: 200%; }
+             55% { right: 200%; }
+             60% { right: 300%; }
+             75% { right: 300%; }
+             80% { right: 400%; }
+             95% { right: 400%; }
+             100% { right: 0; }
+         }
+     .s-move { animation: slideh linear 15s infinite; }
+     .s-move:hover { animation-play-state: paused; }
+
+
+     #myDIV {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
